@@ -8,7 +8,7 @@
 .header {
   height: 7rem; //70px
   background-color: #fff;
-  border-bottom: var(--color-grey-light-2);
+  border-bottom: 1px var(--color-grey-light-2) solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,8 +21,30 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%; //flex shorthand states from left to right :-  grow , shrink or basis , basis is the width
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .hotel-view {
-  background-color: orangered;
+  flex: 1;
+}
+
+.detail {
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+}
+
+.description {
+  background-color: #fff;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  font-size: 1.4rem;
+}
+.user-reviews {
+  background-color: yellowgreen;
   flex: 1;
 }
